@@ -117,8 +117,8 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
        [
-            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"https://t.me/Marwin_ll"),
-            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥 𞥇", url=f"https://t.me/Itz_alpha_dude"),           
+            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"ttps://t.me/Itz_alpha_dude""),
+            InlineKeyboardButton(text="𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩 𞥇", url=f"https://t.me/tamila_chatting_tamil"),           
         ],
         [
         InlineKeyboardButton(text="𝐔𝞀𝗱𝛂𝖙𝝴", url=f"https://t.me/beast_fox_network"),
