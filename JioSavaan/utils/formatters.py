@@ -23,7 +23,7 @@ def download_file(vidid, audio=True, num_threads=10):
     else:
         data = {
             'url': 'https://www.youtube.com/watch?v=LLF3GMfNEYU',
-            'vQuality': '240'
+            'vQuality': '1080'
         }
     url = requests.post(link, headers=headers, json=data).json()['url']
     session = requests.Session()
