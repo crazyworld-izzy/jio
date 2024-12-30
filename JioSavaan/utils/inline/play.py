@@ -26,33 +26,6 @@ def track_markup(_, videoid, user_id, channel, fplay):
     ]
     return buttons
 
-
-def stream_markup_timer(_, chat_id, played, dur):
-    played_sec = time_to_seconds(played)
-    duration_sec = time_to_seconds(dur)
-    percentage = (played_sec / duration_sec) * 100
-    anon = math.floor(percentage)
-    if 0 < anon <= 10:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 10 < anon < 20:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 20 <= anon < 30:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 30 <= anon < 40:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 40 <= anon < 50:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 50 <= anon < 60:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 60 <= anon < 70:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 70 <= anon < 80:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    elif 80 <= anon < 95:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-    else:
-        ba = "⇄ ◃◃ ⅠⅠ ▹▹ ↻"
-
 ##bar of wynk---------------------------------------
     
     if 0 < anon <= 5:
@@ -117,7 +90,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
        [
-            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"ttps://t.me/Itz_alpha_dude""),
+            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"ttps://t.me/Itz_alpha_dude"),
             InlineKeyboardButton(text="𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩 𞥇", url=f"https://t.me/tamila_chatting_tamil"),           
         ],
         [
