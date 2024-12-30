@@ -61,10 +61,6 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "200"))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 904857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 9073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
-AUTO_GCAST = os.getenv("AUTO_GCAST","True")
-
-#Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
-AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", None)
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", "BQAf70YAwncvlI-oYp3dNW9P_esmwH6nWiNuiKbGr0QURAEJHfiGkFzWoH1uYzXlodcvJXHCaPRKTP_AHcjhZak2fcUbTzGn2x0usZ_c6atYZWF1FyNwx1tUv8EBRDzjPNp9GfDIztDeKpIwYC9QTwVFTx1BheI2P1DAYuA1PZ2JpsG9kXLionQhK7QzauaNCI8okpn3Dy3IJnUwcUjMdVvanrd796UwalwfzuER_UQr59q0qPLtI-q_4iIyVb-iE5p6gMzVAf7bI93Q6Eap45xL4R5bvybxTbJHJhQJzM1qRaZbsKj7gA-3Q4ZEl_hKMX0-aWFOIzp0FIbbnNxhB59WRQ8EzAAAAAAqh0_3AA")
