@@ -24,6 +24,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", "-1002066328009"))
 
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "7078122796"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002066328009"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -60,7 +61,10 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "200"))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 904857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 9073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
+AUTO_GCAST = os.getenv("AUTO_GCAST","True")
 
+#Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", None)
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", "AQGTcJIAH00STViRJJyabaefytQOruq2mHv_rsfSpyYLv0_8gDYqQ8s6ttkqmE5KvKcinS30USQx8wsUj4TTOMSKRnj55d4CNNI9zvZBuNpBkmVYclKUxZWyEA7bBOdIXHJFSzyoQH_2BZNhJOE0s3Dx0ifs678XNWhpZr6_ijFsbgyTzT8ePMv_dEFSB-lrCDyKDJQEI_eo5qqXJ5cMKFv2QckR-j8gbViLHqx5VSkh6pqhuwPOhMAH0gASjLgvifYwYrB7up_yrqL4_ZYP33eW0HmJtA8gC01X4FMaAkUiPApngteQr1LvNQTgv04-3gqatJ5-DOaxJ-NVbtPZiCIS2sL0QgAAAAE_vV3wAA")
