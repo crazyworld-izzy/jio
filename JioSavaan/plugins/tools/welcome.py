@@ -33,7 +33,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from JioSavaanC.utils.vip_ban import admin_filter
+from JioSavaan.utils.vip_ban import admin_filter
 import os
 from JioSavaan.misc import SUDOERS
 from PIL import ImageDraw, Image, ImageFont, ImageChops
