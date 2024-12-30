@@ -26,8 +26,13 @@ def track_markup(_, videoid, user_id, channel, fplay):
     ]
     return buttons
 
-##bar of wynk---------------------------------------
-    
+    def stream_markup_timer(_, chat_id, played, dur):
+    played_sec = time_to_seconds(played)
+    duration_sec = time_to_seconds(dur)
+    percentage = (played_sec / duration_sec) * 100
+    anon = math.floor(percentage)
+
+    # Fun and engaging sentences with progress bar
     if 0 < anon <= 5:
         bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 5 <= anon < 10:
