@@ -91,10 +91,10 @@ async def get_thumb(videoid):
         result_img = Image.alpha_composite(background, image5)
 
         draw = ImageDraw.Draw(result_img)
-        font = ImageFont.truetype("assets/font2.ttf", 47)
-        font2 = ImageFont.truetype("assets/font2.ttf", 48)
-        font3 = ImageFont.truetype("assets/font2.ttf", 30)
-        font4 = ImageFont.truetype("assets/font2.ttf", 30)
+        font = ImageFont.truetype("JioSavaan/assets/font2.ttf", 47)
+        font2 = ImageFont.truetype("JioSavaan/assets/font2.ttf", 48)
+        font3 = ImageFont.truetype("JioSavaan/assets/font2.ttf", 30)
+        font4 = ImageFont.truetype("JioSavaan/assets/font2.ttf", 30)
         para = textwrap.wrap(title, width=33)
         try:
             if para[0]:
