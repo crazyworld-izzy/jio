@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 from os import environ
 import requests
 import random
-from JioSavaanimport app, userbot
+from JioSavaan import app, userbot
 from JioSavaan.misc import SUDOERS
 from pyrogram import * 
 from pyrogram.types import *
