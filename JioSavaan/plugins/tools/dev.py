@@ -6,7 +6,7 @@ import traceback
 from inspect import getfullargspec
 from io import StringIO
 from time import time
-from JioSaavan.sudo import SUDOERS
+from JioSaavan.misc import SUDOERS
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
