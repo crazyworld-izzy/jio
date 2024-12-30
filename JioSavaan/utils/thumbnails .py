@@ -1,6 +1,6 @@
 import os
 import re
-import get_thub
+import get_thumb
 import aiofiles
 import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
