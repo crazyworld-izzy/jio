@@ -1,7 +1,7 @@
 import re
 from pyrogram import filters
 import random
-from VIPMUSIC import app
+from JioSavaan import app
 
 
 @app.on_message(filters.command(["ood night","ood night","i8","weet dreams","weet dreams","i8","n","n"], prefixes=["g","G","n","N","s","S","g","G"]))
@@ -11,11 +11,11 @@ def goodnight_command_handler(_, message):
     if send_sticker:
         sticker_id = get_random_sticker()
         app.send_sticker(message.chat.id, sticker_id)
-        message.reply_text(f"**𝐂ʜʟᴍ 𝐕.ᴄᴀʟʟ 𝐏ᴇᴀsᴀʟᴀᴍ 𝐏ᴀʀᴛʜᴀ 𝐀ᴛʜᴜᴋᴜʟʟᴀ 𝐓ʜᴜɴɢᴀ 𝐏ᴏʀɪʏᴇᴀ 🥺😢👩‍🦯</b>\n\n<b>{sender}</b>\n\n<b>𝐂ʜᴇʀʀɪ 𝐁ʙʏ 𝐍ᴀᴍᴍᴀ 𝐃ʀᴇᴀᴍ 𝐋ᴀ 𝐑ᴏᴍᴀɴᴄᴇ 𝐏ᴀɴɴᴀʟʟᴀᴍ 🙈😏❤️**")
+        message.reply_text(f"𝐂ʜʟᴍ 𝐕.ᴄᴀʟʟ 𝐏ᴇᴀsᴀʟᴀᴍ 𝐏ᴀʀᴛʜᴀ 𝐀ᴛʜᴜᴋᴜʟʟᴀ 𝐓ʜᴜɴɢᴀ 𝐏ᴏʀɪʏᴇᴀ 🥺😢👩‍🦯</b>\n\n<b>{sender}</b>\n\n<b>𝐂ʜᴇʀʀɪ 𝐁ʙʏ 𝐍ᴀᴍᴍᴀ 𝐃ʀᴇᴀᴍ 𝐋ᴀ 𝐑ᴏᴍᴀɴᴄᴇ 𝐏ᴀɴɴᴀʟʟᴀᴍ 🙈😏❤️")
     else:
         emoji = get_random_emoji()
         app.send_message(message.chat.id, emoji)
-        message.reply_text(f"**𝐂ʜʟᴍ 𝐕.ᴄᴀʟʟ 𝐏ᴇᴀsᴀʟᴀᴍ 𝐏ᴀʀᴛʜᴀ 𝐀ᴛʜᴜᴋᴜʟʟᴀ 𝐓ʜᴜɴɢᴀ 𝐏ᴏʀɪʏᴇᴀ 🥺😢👩‍🦯</b>\n\n<b>{sender}</b>\n\n<b>𝐂ʜᴇʀʀɪ 𝐁ʙʏ 𝐍ᴀᴍᴍᴀ 𝐃ʀᴇᴀᴍ 𝐋ᴀ 𝐑ᴏᴍᴀɴᴄᴇ 𝐏ᴀɴɴᴀʟʟᴀᴍ 🙈😏❤️</b>\n\n<b>{emoji}**")
+        message.reply_text(f"𝐂ʜʟᴍ 𝐕.ᴄᴀʟʟ 𝐏ᴇᴀsᴀʟᴀᴍ 𝐏ᴀʀᴛʜᴀ 𝐀ᴛʜᴜᴋᴜʟʟᴀ 𝐓ʜᴜɴɢᴀ 𝐏ᴏʀɪʏᴇᴀ 🥺😢👩‍🦯</b>\n\n<b>{sender}</b>\n\n<b>𝐂ʜᴇʀʀɪ 𝐁ʙʏ 𝐍ᴀᴍᴍᴀ 𝐃ʀᴇᴀᴍ 𝐋ᴀ 𝐑ᴏᴍᴀɴᴄᴇ 𝐏ᴀɴɴᴀʟʟᴀᴍ 🙈😏❤️</b>\n\n<b>{emoji}")
 
 
 def get_random_sticker():
