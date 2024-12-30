@@ -2,7 +2,7 @@ import random
 from JioSavaan.utils.database import get_served_chats
 from pyrogram import Client, filters
 
-from VIPMUSIC import app
+from JioSavaan import app
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -58,10 +58,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🍷 𝐒𖽪𖽳𖽳𖽙𖽷𖾓 😻", url=f"https://t.me/izzy_tamil_junction"
+                        "𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩", url=f"https://t.me/tamila_chatting_tamil"
                     ),
                     InlineKeyboardButton(
-                        "🍷 𝐎𖾟𖽡𖽞𖾖 😻", url=f"https://t.me/Itz_alpha_dude"
+                        "⧼𝀤ٜ𝐃𝝴𝛄𝝴𝖑𖦹𝞀𝖗 𞥇 𞥇", url=f"https://t.me/Itz_alpha_dude"
                     ),
                 ]
             ]
@@ -76,11 +76,11 @@ async def help(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "🍷 𝐒𖽪𖽳𖽳𖽙𖽷𖾓 😻", url=f"https://t.me/izzy_tamil_junction"
+                   InlineKeyboardButton(
+                        "𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩", url=f"https://t.me/tamila_chatting_tamil"
                     ),
                     InlineKeyboardButton(
-                         "🍷 𝐎𖾟𖽡𖽞𖾖 😻", url=f"https://t.me/Itz_alpha_dude"
+                        "⧼𝀤ٜ𝐃𝝴𝛄𝝴𝖑𖦹𝞀𝖗 𞥇 𞥇", url=f"https://t.me/Itz_alpha_dude"
                     ),
                 ]
             ]
@@ -115,7 +115,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 
-from VIPMUSIC import app
+from JioSavaan import app
 
 # Define the scheduler
 scheduler = AsyncIOScheduler(timezone="Asia/Kolkata")
