@@ -15,11 +15,11 @@ from PIL import Image, ImageDraw, ImageFont
 from os import environ
 import requests
 import random
-from JioSavaan import app, userbot
+from JioSavaan import app
 from JioSavaan.misc import SUDOERS
 from pyrogram import * 
 from pyrogram.types import *
-from JioSavaan.utils.vip_ban import admin_filter
+
 import random
 from pyrogram import Client, filters
 from pyrogram.types import ChatJoinRequest, InlineKeyboardButton, InlineKeyboardMarkup
@@ -33,7 +33,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from JioSavaan.utils.vip_ban import admin_filter
+
 import os
 from JioSavaan.misc import SUDOERS
 from PIL import ImageDraw, Image, ImageFont, ImageChops
