@@ -40,25 +40,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "এৣ᭜᭄—————————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 10 < umm < 20:
-        bar = "—এৣ᭜᭄————————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 20 <= umm < 30:
-        bar = "——এৣ᭜᭄———————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 30 <= umm < 40:
-        bar = "———এৣ᭜᭄——————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 40 <= umm < 50:
-        bar = "————এৣ᭜᭄—————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 50 <= umm < 60:
-        bar = "—————এৣ᭜᭄————"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 60 <= umm < 70:
-        bar = "——————এৣ᭜᭄———"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 70 <= umm < 80:
-        bar = "———————এৣ᭜᭄——"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     elif 80 <= umm < 95:
-        bar = "————————এৣ᭜᭄—"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
     else:
-        bar = "—————————এৣ᭜᭄"
+        bar = "𓆰⚡͚̍𝆹𝅥𝐁𝔢𝖆𝛅𝐓 𝐅🐺𝐗 𝐍𝔢𝖙𝔴𝖔𝔯𝐊🕸️"
 
     buttons = [
         [
@@ -75,12 +75,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             )
         ],
            [
-            InlineKeyboardButton(text=" 𝐃𝝴𝛄𝝴𝖑𖦹𝞀𝖗 ", url=f"https://t.me/Itz_alpha_dude"),
-            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥 𞥇", url=f"https://t.me/Teleeceo"),           
+            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"ttps://t.me/Itz_alpha_dude"),
+            InlineKeyboardButton(text="𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩 𞥇", url=f"https://t.me/tamila_chatting_tamil"),           
         ],
         [
-        InlineKeyboardButton(text="𝐔𝞀𝗱𝛂𝖙𝝴", url=f"https://t.me/yelutha_kadhayo"),
-        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="𝃜𝆆♡〭 close 𝃜𝆆♡〭"),
+        InlineKeyboardButton(text="𝐔𝞀𝗱𝛂𝖙𝝴", url=f"https://t.me/beast_fox_network"),
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=" close "),
         ]
     ]
 
@@ -97,12 +97,12 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
              [
-            InlineKeyboardButton(text=" 𝐃𝝴𝛄𝝴𝖑𖦹𝞀𝖗", url=f"https://t.me/Itz_alpha_dude"),
-            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"https://t.me/Teleeceo"),           
+            InlineKeyboardButton(text="𝀤ٜ𖦹 𝘄 𝐍 𞥄𝝴 𝗥", url=f"ttps://t.me/Itz_alpha_dude"),
+            InlineKeyboardButton(text="𝀤ٜ 𝗖 ʜ 𞥄𝝰 𝝩 𞥇", url=f"https://t.me/tamila_chatting_tamil"),           
         ],
         [
-        InlineKeyboardButton(text="𝐔𝞀𝗱𝛂𝖙𝝴", url=f"https://t.me/yelutha_kadhayo"),
-        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="𝃜𝆆♡〭  close 𝃜𝆆♡〭"),
+        InlineKeyboardButton(text="𝐔𝞀𝗱𝛂𝖙𝝴", url=f"https://t.me/beast_fox_network"),
+        InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data=" close "),
         ]
     ]
     return buttons
