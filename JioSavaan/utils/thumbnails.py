@@ -6,7 +6,7 @@ import aiofiles
 import aiohttp
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
-from config import YOUTUBE_IMG_URL 
+from config import YOUTUBE_IMG_URL
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -37,7 +37,7 @@ def circle(img):
     return Image.fromarray(e)
 
 
-async def get_thumb(videoid):
+async def gen_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}.png"):
         return f"cache/{videoid}.png"
 
@@ -65,14 +65,14 @@ async def get_thumb(videoid):
                 channel = "Unknown"  
             thumbnail = result["thumbnails"][0]["url"].split("?")[0]
 
-   async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession() as session:
             async with session.get(thumbnail) as resp:
                 if resp.status == 200:
                     f = await aiofiles.open(f"cache/thumb{videoid}.png", mode="wb")
                     await f.write(await resp.read())
                     await f.close()
 
-
+        
 
         youtube = Image.open(f"assets/backthumb.png")
         zyoutube = Image.open(f"cache/thumb{videoid}.png")
@@ -89,7 +89,7 @@ async def get_thumb(videoid):
         image3 = bg.resize((1280, 720))
         image5 = image3.convert("RGBA")
         result_img = Image.alpha_composite(background, image5)
-
+        
         draw = ImageDraw.Draw(result_img)
         font = ImageFont.truetype("assets/font2.ttf", 47)
         font2 = ImageFont.truetype("assets/font2.ttf", 48)
@@ -198,20 +198,22 @@ async def get_thumb(videoid):
             stroke_fill="black",
             font=font3,
            )
-
+       
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-
+            
         result_img.save(f"cache/{videoid}.png")
         return f"cache/{videoid}.png"
 
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
+    
 
-async def get_qthumb(vidid):
+
+async def gen_qthumb(vidid):
     try:
         query = f"https://www.youtube.com/watch?v={vidid}"
         results = VideosSearch(query, limit=1)
@@ -220,3 +222,30 @@ async def get_qthumb(vidid):
         return thumbnail
     except Exception as e:
         return YOUTUBE_IMG_URL
+
+
+from youtubesearchpython.__future__ import VideosSearch
+
+
+async def get_thumb(videoid):
+    try:
+        # Search for the video using video ID
+        query = f"https://www.youtube.com/watch?v={videoid}"
+        results = VideosSearch(query, limit=1)
+        for result in (await results.next())["result"]:
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+        return thumbnail
+    except Exception as e:
+        return config.YOUTUBE_IMG_URL
+
+
+async def get_thumb(vidid):
+    try:
+        # Search for the video using video ID
+        query = f"https://www.youtube.com/watch?v={vidid}"
+        results = VideosSearch(query, limit=1)
+        for result in (await results.next())["result"]:
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+        return thumbnail
+    except Exception as e:
+        return config.YOUTUBE_IMG_URL
